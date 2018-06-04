@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign In & Sign Up - PPBS</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<div class="w3-center">
+  <h1> Sign In & Sign Up </h1>
+  <div id="switch">
+    <button class="w3-button w3-blue w3-round w3-card" onclick="si()">Sign In</button>
+    <button class="w3-button w3-blue w3-round w3-card" onclick="su()">Sign Up</button>
+  </div>
+  <div id="form" class="w3-light-gray"> </div>
+</div>
+<script>
+	function si() {
+	document.getElementById("form").innerHTML = '<form action="https://co-co.tk/account/si.php" method="post"><h1>Sign In</h1><label>Email:</label><br/><input type="text" name="email"/><br/><label>Password:</label><br/><input type="password" name="pw"/><br/><input type="submit"/></form>';
+	}
+	function su() {
+	document.getElementById("form").innerHTML = '<form action="https://co-co.tk/account/su.php" method="post"><h1>Sign Up</h1><label>User Name:</label><br/><input type="text" name="name"/><br/><label>Email:</label><br/><input type="text" name="email"/><br/><label>Password:</label><br/><input type="password" name="pw"/><br/><label>Password Again:</label><br/><input type="password" name="pwa"/><br/><input type="submit"/></form>';
+	}
+	si();
+	</script>
+</body>
+</html>
