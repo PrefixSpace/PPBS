@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Account - PPBS</title>
+<title>Write Article - PPBS</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
@@ -12,15 +12,21 @@
     <div class="w3-right w3-hide-small"> <a href="./article/" class="w3-bar-item w3-button">Articles</a> <a href="./album/" class="w3-bar-item w3-button">Album</a> <a href="./account/" class="w3-bar-item w3-button">Account</a> </div>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<div class="w3-center"> 
-	<div class="w3-light-gray w3-padding-16">
-    	<a class="w3-button w3-blue w3-round-xlarge"><h1>Write New Article</h1></a>
-	    <a class="w3-button w3-blue w3-round-xlarge"><h1>Upload New Photos</h1></a>
-	</div>
+<div class="w3-container"> 
+  <br>
+  <br>
+  <br>
+  <br>
+    <h2>Write Article</h2>
+  <div id="write" style="width: 100%">
+	  <form id="f" action="https://co-co.tk/PPBS/write.php" method="post">
+		  <label>Title:</label><br>
+		  <input style="width: 100%" class="w3-round w3-border-gray" type="text" name="title"><br>
+		  <label>Content:</label><br>
+		  <textarea style="width: 100%" class="w3-round w3-border-gray" form="f" name="content"></textarea><br>
+		  <input class="w3-right w3-button w3-blue w3-round" type="submit">
+	  </form>
+  </div>
 </div>
 </body>
 </html>
